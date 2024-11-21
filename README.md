@@ -27,8 +27,10 @@ We demonstrate the effectiveness of our approach through a case study on estimat
 - **`data/`**: Example datasets for testing and validation.  
 - **`notebooks/`**: Jupyter notebooks with step-by-step examples and results.  
 - **`docs/`**: Documentation and resources related to the paper.
+  
+---
 
-📄 Citing this Work
+## 📄 Citing this Work
 If you use this repository, please cite:
 @article{arbaoui2024counterfactual,  
   title={Counterfactual Explanation Generation for Multivariate Time Series Forecasting},  
@@ -36,7 +38,11 @@ If you use this repository, please cite:
   journal={EGC},  
   year={2024}  
 }
-📧 Contact
+
+---
+## 📧 Contact
 For questions or collaboration opportunities, feel free to contact:
 Slimane Arbaoui  
 Email: slimane.arbaoui@insa-strasbourg.fr  
+
+---
