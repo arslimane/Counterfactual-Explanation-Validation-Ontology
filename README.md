@@ -23,9 +23,8 @@ We demonstrate the effectiveness of our approach through a case study on estimat
 ---
 
 ## 📂 **Repository Contents**  
-- **`code/`**: Implementation of GENO-TOPSIS, NSGA-II, and CEVO frameworks.  
+- **`code/`**: Implementation of GENO-TOPSIS, NSGA-II, with step-by-step examples and results.  
 - **`data/`**: Example datasets for testing and validation.  
-- **`notebooks/`**: Jupyter notebooks with step-by-step examples and results.  
 - **`docs/`**: Documentation and resources related to the paper.
   
 ---
