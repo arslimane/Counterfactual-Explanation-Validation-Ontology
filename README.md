@@ -36,7 +36,7 @@ If you use this repository, please cite:
   title={Counterfactual Explanation Generation for Multivariate Time Series Forecasting},  
   author={Slimane Arbaoui, Ali Ayadi, Ahmed Samet, Tedjani Mesbahi, Romuald Boné},  
   journal={EGC},  
-  year={2024}  
+  year={2025}  
 }
 
 ---
