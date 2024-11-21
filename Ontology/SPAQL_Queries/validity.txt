@@ -1,0 +1,25 @@
+
+PREFIX validation: <http://www.semanticweb.org/ladmin.aliyev/ontologies/validation#>
+PREFIX time: <http://www.semanticweb.org/ladmin.aliyev/ontologies/time#>
+
+SELECT ?originalSOC ?counterfactualSOC ?originalTime
+(IF(?counterfactualSOC != ?originalSOC, "Valid", "Invalid") AS
+?differentValues)
+WHERE {
+?originalSOCData a validation:OriginalSOCData ;
+
+validation:hasCollection ?originalCollection .
+?originalCollection a validation:TimeSeriesCollection ;
+validation:hasSOC ?originalSOC ;
+time:hasTimeStamp ?originalTime .
+
+?counterfactualSOCData a validation:CounterfactualSOCData ;
+
+validation:hasCollection ?counterfactualCollection
+
+.
+?counterfactualCollection a validation:TimeSeriesCollection ;
+validation:hasSOC ?counterfactualSOC ;
+time:hasTimeStamp ?originalTime .
+
+}

@@ -1,0 +1,25 @@
+
+PREFIX validation: <http://www.semanticweb.org/ladmin.aliyev/ontologies/validation#>
+PREFIX time: <http://www.semanticweb.org/ladmin.aliyev/ontologies/time#>
+
+SELECT (AVG(?difference) AS ?averageDifference)
+WHERE {
+?originalData a validation:OriginalData .
+?originalData validation:hasCollection ?originalCollection .
+?originalCollection a validation:TimeSeriesCollection ;
+
+validation:hasTemperature ?originalTemperature ;
+time:hasTimeStamp ?originalTime .
+?counterfactualData a validation:CounterfactualData .
+?counterfactualData validation:hasCollection ?counterfactualCollection
+.
+?counterfactualCollection a validation:TimeSeriesCollection ;
+
+validation:hasTemperature
+
+?counterfactualTemperature ;
+
+time:hasTimeStamp ?originalTime .
+BIND(ABS(?counterfactualTemperature - ?originalTemperature) AS
+?difference)
+}
