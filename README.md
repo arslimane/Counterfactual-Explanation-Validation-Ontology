@@ -32,9 +32,9 @@ We demonstrate the effectiveness of our approach through a case study on estimat
 ## 📄 Citing this Work
 If you use this repository, please cite:
 @article{arbaoui2024counterfactual,  
-  title={Counterfactual Explanation Generation for Multivariate Time Series Forecasting},  
+  title={Validation ontologique des explications contrefactuelles pour les séries temporelles : Application aux batteries lithium-ion}, 
   author={Slimane Arbaoui, Ali Ayadi, Ahmed Samet, Tedjani Mesbahi, Romuald Boné},  
-  journal={EGC},  
+  journal={Conférence Extraction et Gestion des Connaissances (EGC)},  
   year={2025}  
 }
 
